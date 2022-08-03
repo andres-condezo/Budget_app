@@ -15,24 +15,16 @@
 
 <div align="center">
 
-  <div style="color: white; background-color: blueviolet; padding-top: 30px;">
-
 # Buget App
 
-  </div> 
-
-  <div style="margin: 50px 0;">
-
-  ![Ruby] ![Rails] ![Postgres] ![HTML5] ![CSS3] 
-
-  </div>
+![Ruby] ![Rails] ![Postgres] ![HTML5] ![CSS3] 
 
 </div>
 
 > Budget app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 <details open>
-<summary style="color: steelblue; font-weight: bold; font-size: 22px;">
+<summary>
 Table of Contents
 </summary>
 
@@ -53,11 +45,7 @@ Table of Contents
 
 </details>
 
-<div style="color: steelblue;">
-
 ## Built With
-
-</div>
 
 ### Major languages
 
@@ -67,11 +55,7 @@ Table of Contents
 
  - Ruby on Rails
 
-<div style="color: steelblue;">
-
 ## Getting Started
-
-</div>
 
 To get a local copy up and running follow these simple example steps:
 
@@ -126,11 +110,7 @@ bundle exec rspec .
 bundle exec rspec ./spec/<folder_name>/<file_name>
 ```
 
-<div style="color: steelblue;">
-
 ## Authors
-
-</div>
 
 <!-- table Variables -->
 [@andres-condezo]:https://github.com/andres-condezo
@@ -144,37 +124,21 @@ bundle exec rspec ./spec/<folder_name>/<file_name>
 | **Twitter**  | [@andres_condezo]  |
 | **LinkedIn** | [andres-condezo]   |
 
-<div style="color: steelblue;">
-
 ## Contributing
-
-</div>
 
 Contributions, issues, and feature requests are welcome! 🤝
 
 Feel free to check the [issues page](../../issues/).
 
-<div style="color: steelblue;">
-
 ## Show your support
-
-</div>
 
 Give a ⭐️ if you like this project!
 
-<div style="color: steelblue;">
-
 ## Acknowledgments
-
-</div>
 
 - [Rails guides](https://guides.rubyonrails.org/)
 
-<div style="color: steelblue;">
-
 ## License
-
-</div>
 
 This project is [MIT](./MIT.md) licensed. 📝
 
