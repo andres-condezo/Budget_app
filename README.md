@@ -136,9 +136,13 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Rails guides](https://guides.rubyonrails.org/)
+<!-- Acknowledgments Variables -->
+[Gregoire Vella]:https://www.behance.net/gregoirevella
+[Original design]:https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=
+<!-- Acknowledgments Variables -->
+
+- [Original design] idea by [Gregoire Vella] on Behance.
 
 ## License
 
 This project is [MIT](./MIT.md) licensed. 📝
-
