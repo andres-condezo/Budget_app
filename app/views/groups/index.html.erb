@@ -1,0 +1,9 @@
+<% if @user_groups.length > 0 %>
+  <% @user_groups.each do |group| %>
+    <%= render partial: 'partials/group', locals: { group: group } %>
+  <% end %>
+<% else %>
+    <h3>Please add a new category</h3>
+<% end %>
+
+<%= render 'partials/btn_group', user: @user %>

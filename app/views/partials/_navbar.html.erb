@@ -1,0 +1,5 @@
+<% if current_user %>
+  <%= link_to_previous_page("<") %>
+  <%= @title %>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-like" %>
+<% end %>
