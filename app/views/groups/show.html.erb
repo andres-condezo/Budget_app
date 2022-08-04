@@ -1,0 +1,12 @@
+<%= render partial: 'partials/group', locals: { group: @current_group } %>
+<% if @current_group.budgets.length > 0 %>
+  <div class="budget">
+    <% @current_group.budgets.order(created_at: :desc).each do |budget| %>
+      <%= render partial: 'partials/budget', locals: { budget: budget } %>
+    <% end %>
+  </div>
+<% else %>
+    <h3>Please add a transaction.</h3>
+<% end %>
+
+<%= render 'partials/btn_budget', user: @user %>
