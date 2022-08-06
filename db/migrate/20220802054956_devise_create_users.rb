@@ -13,10 +13,10 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.datetime :remember_created_at
 
       ## Confirmable
-      t.string   :confirmation_token
-      t.datetime :confirmed_at
-      t.datetime :confirmation_sent_at
-      t.string   :unconfirmed_email # Only if using reconfirmable
+      # t.string   :confirmation_token
+      # t.datetime :confirmed_at
+      # t.datetime :confirmation_sent_at
+      # t.string   :unconfirmed_email # Only if using reconfirmable
 
 
       # Uncomment below if timestamps were not included in your original model.

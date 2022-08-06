@@ -1,9 +1,17 @@
-<% if @user_groups.length > 0 %>
-  <% @user_groups.each do |group| %>
-    <%= render partial: 'partials/group', locals: { group: group } %>
+<section class = "main-container">
+  <% if @user_groups.length > 0 %>
+    <% @user_groups.each do |group| %>
+      <%= render partial: 'partials/group', locals: { group: group } %>
+    <% end %>
+  <% else %>
+    <div class="p-container">
+      <a>
+        <h3>Please add a new category</h3>
+      </a>
+    </div>
   <% end %>
-<% else %>
-    <h3>Please add a new category</h3>
-<% end %>
+</section>
 
-<%= render 'partials/btn_group', user: @user %>
+<section class = "btn-green-container">
+  <%= render 'partials/btn_group', user: @user%>
+</section>

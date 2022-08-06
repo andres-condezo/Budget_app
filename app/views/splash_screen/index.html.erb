@@ -1,4 +1,10 @@
-<h1>My Budget</h1>
+<div class = "splash-container">
+  <section class = "logo-container">
+    <h1>My Budget</h1>
+  </section>
 
-<%= link_to "Log in", new_user_session_path %><br />
-<%= link_to "Sign up", new_user_registration_path %><br />
+  <section class = "buttons-container">
+    <%= link_to "LOG IN", new_user_session_path, class: "btn btn-blue" %><br />
+    <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-white" %><br />
+  </section>
+</div>

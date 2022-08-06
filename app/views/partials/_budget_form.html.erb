@@ -1,17 +1,10 @@
 <h2>New Transaction</h2>
 
 <%= form_with  model: @budget, url: group_budgets_path, class: 'budget-form-container' do |f| %>
-  <div class="name-field-container">
-    <%= f.label :name, class: 'name-label' %>
     <%= f.text_field :name, placeholder: 'Name', class: 'name-text-field' %>
-  </div>
 
-  <div class="amount-container">
     <%= f.label :amount, class: 'amount-label' %>
     <%= f.number_field :amount, :step => "1", class: 'amount-text-area' %>
-  </div>
 
-  <div class="btn-c">
-    <%= f.submit 'Save', class:'btn' %>
-  </div>
+    <%= f.submit 'SAVE', class:'btn-blue' %>
 <% end %>

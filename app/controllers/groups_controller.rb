@@ -5,13 +5,13 @@ class GroupsController < ApplicationController
   def index
     @user = current_user
     @user_groups = @user.groups.order(created_at: :desc)
-    @title = 'Categories'
+    @title = 'CATEGORIES'
   end
 
   def show
     @current_group = Group.find(params[:id])
     @user = current_user
-    @title = 'Transactions'
+    @title = 'TRANSACTIONS'
   end
 
   def new
