@@ -273,7 +273,15 @@ a {
   }
 
   body {
-    width: 50%;
+    width: 70%;
+  }
+
+  nav {
+    padding: 0 4rem;
+  }
+
+  .btn-green {
+    width: 30%;
   }
 
   .splash-container {
