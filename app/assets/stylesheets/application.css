@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+@font-face {
+  font-family: "Mark Simonson - Proxima Nova Alt Regular-webfont";
+  src: url("Mark Simonson - Proxima Nova Alt Regular-webfont.woff");
+}
+
 /* CSS variables */
 
 :root {
@@ -7,7 +12,8 @@
   --accent-color: #5fb523;
   --grey-color: #434b54;
   --white-color: #d3d3d3;
-  --font-sans: 'Proxima Nova', Georgia, sans-serif;
+  /* --font-sans: 'Proxima Nova', Georgia, sans-serif; */
+  --font-face: "Mark Simonson - Proxima Nova Alt Regular-webfont";
 }
 
 /* Reset default styles */
@@ -20,7 +26,7 @@
 /* Setting font family and size */
 
 html {
-  font-family: var(--font-sans);
+  font-family: var(--font-face);
   font-size: 62.5%;
   color: var(--grey-color);
   scroll-behavior: smooth;
