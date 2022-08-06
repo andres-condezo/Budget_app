@@ -267,9 +267,9 @@ a {
   bottom: 0;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   html {
-    background-color: #fff;
+    background-color: var(--grey-color);
   }
 
   body {
