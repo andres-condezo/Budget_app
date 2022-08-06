@@ -25,7 +25,7 @@
 /* Setting font family and size */
 
 html {
-  font-family: var(--font-face);
+  font-family: "Mark Simonson - Proxima Nova Alt Regular-webfont", "Arial", Helvetica, sans-serif;
   font-size: 62.5%;
   color: var(--grey-color);
   scroll-behavior: smooth;
