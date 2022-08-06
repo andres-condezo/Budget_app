@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 @font-face {
-  font-family: "Mark Simonson - Proxima Nova Alt Regular-webfont";
+  font-family: "Mark Simonson - Proxima Nova Alt Regular-webfont", sans-serif;
   src: url("Mark Simonson - Proxima Nova Alt Regular-webfont.woff");
 }
 
@@ -237,12 +237,6 @@ form input {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
-
-.form-container {
-  justify-content: space-between;
-  gap: 4rem;
-  padding: 4rem;
 }
 
 .btn-green-container {
