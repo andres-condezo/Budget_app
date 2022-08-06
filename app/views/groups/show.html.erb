@@ -1,12 +1,40 @@
-<%= render partial: 'partials/group', locals: { group: @current_group } %>
-<% if @current_group.budgets.length > 0 %>
-  <div class="budget">
-    <% @current_group.budgets.order(created_at: :desc).each do |budget| %>
-      <%= render partial: 'partials/budget', locals: { budget: budget } %>
+<section class = "main-container">
+  <% @group = @current_group %>
+  <div class="p-container">
+    <%= link_to group_path(id: @group.id) do %>
+      <%= image_tag url_for(@group.icon),
+          alt: "#{@group.name}" if @group.icon.attached? %>
+
+      <h3><%= @group.name %></h3>
     <% end %>
   </div>
-<% else %>
-    <h3>Please add a transaction.</h3>
-<% end %>
 
-<%= render 'partials/btn_budget', user: @user %>
+  <% if @current_group.budgets.length > 0 %>
+      <% @current_group.budgets.order(created_at: :desc).each do |budget| %>
+        <%= render partial: 'partials/budget', locals: { budget: budget } %>
+      <% end %>
+
+  <% else %>
+    <div class="p-container">
+      <a>
+        <h3>Please add a transaction.</h3>
+      </a>
+    </div>
+  <% end %>
+
+  <div class="p-container">
+    <a>
+      <h3>TOTAL PAYMENT:</h3>
+
+      <% @total_value = 0 %>
+      <% @group.budgets.each do |b| %>
+        <% @total_value += b.amount %>
+      <% end %>
+      <span>$<%= @total_value %></span>
+    </a>
+  </div>
+</section>
+
+<section class = "btn-green-container">
+  <%= render 'partials/btn_budget', user: @user %>
+</section>

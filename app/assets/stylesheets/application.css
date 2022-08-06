@@ -1,15 +1,282 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* CSS variables */
+
+:root {
+  --primary-color: #3778c2;
+  --accent-color: #5fb523;
+  --grey-color: #434b54;
+  --white-color: #d3d3d3;
+  --font-sans: 'Proxima Nova', Georgia, sans-serif;
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting font family and size */
+
+html {
+  font-family: var(--font-sans);
+  font-size: 62.5%;
+  color: var(--grey-color);
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Setting mobile first styles */
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: whitesmoke;
+  background-color: #eee;
+}
+
+h3 {
+  color: grey;
+}
+
+.splash-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+}
+
+.buttons-container {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  all: unset;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.btn-blue {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.btn-white {
+  color: var(--grey-color);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.amount-label {
+  font-size: 1.6rem;
+  float: left;
+  margin-top: 1rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 8rem;
+  color: white;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+nav h2 {
+  font-size: 2rem;
+}
+
+.navbar a {
+  all: unset;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+form .field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  width: 96%;
+  border: none;
+  margin-bottom: 0.5rem;
+  padding: 1.4rem;
+}
+
+.btn-log {
+  font-size: 1.4rem;
+}
+
+.btn-back {
+  font-size: 3.6rem;
+}
+
+.button_to {
+  all: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.check-box-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem;
+}
+
+.check-box-container label {
+  font-size: 1.4rem;
+  display: flex;
+}
+
+.check-box-container input {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+  padding: 1rem;
+  font-size: 4rem;
+  border: none;
+}
+
+a {
+  all: unset;
+  font-size: 1.4rem;
+}
+
+.p-container {
+  width: 90%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.p-container a {
+  width: 90%;
+  min-height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.p-container img {
+  width: 8rem;
+}
+
+.p-container span {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.notice {
+  color: green;
+}
+
+.alert {
+  color: red;
+}
+
+.msg {
+  font-size: 1.8rem;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-container {
+  justify-content: spcace-between;
+  gap: 4rem;
+  padding: 4rem;
+}
+
+.btn-green-container {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-green {
+  width: 90%;
+  height: 50%;
+  color: white;
+  border: solid 1px #fff;
+  padding: 0;
+}
+
+.btn-form {
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    background-color: #fff;
+  }
+
+  body {
+    width: 50%;
+  }
+
+  .splash-container {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}

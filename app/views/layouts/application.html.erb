@@ -8,14 +8,13 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <!-- <%= javascript_importmap_tags %> -->
+    <link rel="stylesheet" type="text/css" href="/app/assets/fonts.css" />
   </head>
 
   <body>
-    <main>
-      <%= render 'partials/navbar'%>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-      <%= yield %>
-    </main>
+    <%= render 'partials/navbar'%>
+    <%= yield %>
+    <p class="notice msg"><%= notice %></p>
+    <p class="alert msg"><%= alert %></p>
   </body>
 </html>

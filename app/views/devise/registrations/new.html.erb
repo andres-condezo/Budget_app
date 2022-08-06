@@ -1,11 +1,11 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <nav>
-    <%= link_to "<", :back %>
+    <%= link_to "<", "/", class: "btn btn-back" %>
 
     <h2>REGISTER</h2>
 
     <div class="actions">
-      <%= f.submit "Sign up" %>
+      <%= f.submit "Sign up", class: "btn btn-log" %>
     </div>
   </nav>
 
