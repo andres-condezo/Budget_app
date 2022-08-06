@@ -1,0 +1,34 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <nav>
+    <%= link_to "<", "/", class: "btn btn-back" %>
+
+    <h2>REGISTER</h2>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class: "btn btn-log" %>
+    </div>
+  </nav>
+
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.text_field :name, autofocus: true, placeholder: "Full name"%>
+  </div>
+
+  <div class="field">
+    <%= f.email_field :email, placeholder: "email", autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, placeholder: "password", autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, placeholder: "password confirmation", autocomplete: "new-password" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

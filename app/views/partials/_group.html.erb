@@ -1,0 +1,14 @@
+<div class="p-container">
+  <%= link_to group_path(id: group.id) do %>
+    <%= image_tag url_for(group.icon),
+        alt: "#{group.name}" if group.icon.attached? %>
+
+    <h3><%= group.name %></h3>
+
+    <% @total_value = 0 %>
+    <% group.budgets.each do |b| %>
+      <% @total_value += b.amount %>
+    <% end %>
+    <span>$<%= @total_value %></span>
+  <% end %>
+</div>

@@ -1,0 +1,12 @@
+<section class = "main-container">
+
+  <h2>New category</h2>
+
+  <%= form_with  model: @group, url: groups_path, class: 'group-form-container' do |f| %>
+
+    <%= f.text_field :name, placeholder: 'Name', class: 'name-text-field' %>
+    <%= f.file_field :icon %>
+
+    <%= f.submit 'SAVE', class:'btn-blue' %>
+  <% end %>
+</section>

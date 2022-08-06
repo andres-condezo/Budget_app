@@ -1,0 +1,10 @@
+<h2>New Transaction</h2>
+
+<%= form_with  model: @budget, url: group_budgets_path, class: 'budget-form-container' do |f| %>
+    <%= f.text_field :name, placeholder: 'Name', class: 'name-text-field' %>
+
+    <%= f.label :amount, class: 'amount-label' %>
+    <%= f.number_field :amount, :step => "1", class: 'amount-text-area' %>
+
+    <%= f.submit 'SAVE', class:'btn-blue' %>
+<% end %>
