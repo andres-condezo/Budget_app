@@ -198,6 +198,8 @@ a {
   width: 90%;
   margin-bottom: 1rem;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .p-container a {
@@ -206,7 +208,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .p-container img {
