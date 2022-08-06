@@ -12,7 +12,6 @@
   --accent-color: #5fb523;
   --grey-color: #434b54;
   --white-color: #d3d3d3;
-  /* --font-sans: 'Proxima Nova', Georgia, sans-serif; */
   --font-face: "Mark Simonson - Proxima Nova Alt Regular-webfont";
 }
 
@@ -128,9 +127,13 @@ nav h2 {
   font-size: 2rem;
 }
 
+a {
+  all: unset;
+  font-size: 1.4rem;
+}
+
 .navbar a {
   all: unset;
-  font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,11 +192,6 @@ form input {
   border: none;
 }
 
-a {
-  all: unset;
-  font-size: 1.4rem;
-}
-
 .p-container {
   width: 90%;
   margin-bottom: 1rem;
@@ -242,7 +240,7 @@ a {
 }
 
 .form-container {
-  justify-content: spcace-between;
+  justify-content: space-between;
   gap: 4rem;
   padding: 4rem;
 }
@@ -294,5 +292,3 @@ a {
     align-items: center;
     justify-content: space-between;
   }
-
-}
